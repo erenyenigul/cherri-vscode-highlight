@@ -3,6 +3,11 @@
   "displayName": "cherri",
   "description": "Syntax highlighting for cherri",
   "version": "0.0.1",
+  "publisher": "erenyenigul",
+  "repository": {
+    "url": "https://github.com/erenyenigul/cherri-vscode-highlight"
+  },
+  "icon": "cherri_icon.png",
   "engines": {
     "vscode": "^1.81.0"
   },
