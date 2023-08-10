@@ -9,7 +9,7 @@
   },
   "icon": "cherri_icon.png",
   "engines": {
-    "vscode": "^1.68p.0"
+    "vscode": "^1.68.0"
   },
   "categories": [
     "Programming Languages"
