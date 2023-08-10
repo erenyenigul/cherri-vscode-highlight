@@ -2,14 +2,14 @@
   "name": "cherri",
   "displayName": "cherri",
   "description": "Syntax highlighting for cherri",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "publisher": "erenyenigul",
   "repository": {
     "url": "https://github.com/erenyenigul/cherri-vscode-highlight"
   },
   "icon": "cherri_icon.png",
   "engines": {
-    "vscode": "^1.68.0"
+    "vscode": "^1.68p.0"
   },
   "categories": [
     "Programming Languages"
