@@ -1,0 +1,25 @@
+{
+  "name": "cherri",
+  "displayName": "cherri",
+  "description": "Syntax highlighting for cherri",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.81.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "cherri",
+      "aliases": ["Cherri", "cherri"],
+      "extensions": [".cherri"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "cherri",
+      "scopeName": "source.cherri",
+      "path": "./syntaxes/cherri.tmLanguage.json"
+    }]
+  }
+}

@@ -1,0 +1,101 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Cherri",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "#pragmas"
+		},
+		{
+			"include": "#declerations"
+		},
+		{
+			"include": "#blockcomments"
+		},
+		{
+			"include": "#linecomments"
+		},
+		{
+			"include": "#contants"
+		},
+		{
+			"include": "#actions"
+		},
+	
+		{
+			"include": "#calls"
+		},
+		{
+			"include": "#variables"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [{
+				"name": "keyword.control.cherri",
+				"match": "\\b(if|else|repeat|for|color|name|glyph|menu|item|list)\\b"
+			}]
+		},
+		"pragmas": {
+			"patterns": [{
+				"name": "keyword.pragma.cherri",
+				"match": "(#include|#define|#question)\\b"
+			}]
+		},
+		"strings": {
+			"name": "string.quoted.double.cherri",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.cherri",
+					"match": "\\\\."
+				}
+			]
+		},
+		"declerations": {
+			"name": "variable.other.cherri",
+			"patterns": [{
+				"name": "storage.type.cherri",
+				"match": "@[^ ]+\\b"
+			}]
+		},
+		"blockcomments": {
+			"name": "comment.block.cherri",
+			"begin": "/\\*",
+			"end": "\\*/",
+			"patterns": [
+				{
+					"name": "comment.line.double-slash.cherri",
+					"match": "//.*$"
+				}
+			]
+		},
+		"linecomments": {
+			"name": "comment.line.double-slash.cherri",
+			"match": "//.*$"
+		},
+		"contants": {
+			"name": "constant.numeric.cherri",
+			"match": "\\b[0-9]+\\b"
+		},
+		"actions": {
+			"name": "storage.type.cherri",
+			"match": "\\b(action)\\b"
+		},
+		"calls": {
+			"name": "entity.name.function.cherri",
+			"match": "\\b[a-zA-Z_][a-zA-Z0-9_]*\\b\\("
+		},
+		"variables": {
+			"name": "variable.other.cherri",
+			"match": "\\b[a-zA-Z_][a-zA-Z0-9_]*\\b"
+		}
+	},
+	"scopeName": "source.cherri"
+}
