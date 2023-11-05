@@ -38,13 +38,13 @@
 		"keywords": {
 			"patterns": [{
 				"name": "keyword.control.cherri",
-				"match": "\\b(if|else|repeat|for|color|name|glyph|menu|item|list)\\b"
+				"match": "\\b(if|else|repeat|for|color|name|glyph|from|mac|inputs|from|noinput|askfor|getclipboard|menu|item|list|nil|const|action|in|stop|makeVCard|rawAction)\\b"
 			}]
 		},
 		"pragmas": {
 			"patterns": [{
 				"name": "keyword.pragma.cherri",
-				"match": "(#include|#define|#question)\\b"
+				"match": "(#include|#define|#import|#question)\\b"
 			}]
 		},
 		"strings": {
@@ -55,6 +55,10 @@
 				{
 					"name": "constant.character.escape.cherri",
 					"match": "\\\\."
+				},
+				{
+					"name": "string.interpolated.cherri",
+					"match": "\\{.*?\\}"
 				}
 			]
 		},
@@ -80,9 +84,18 @@
 			"name": "comment.line.double-slash.cherri",
 			"match": "//.*$"
 		},
-		"contants": {
-			"name": "constant.numeric.cherri",
-			"match": "\\b[0-9]+\\b"
+		"constants": {
+			"name": "constants.cherri",
+			"patterns": [
+				{
+					"name": "constant.language.cherri",
+					"match": "\\b(CurrentDate|Device|RepeatIndex|RepeatItem|ShortcutInput|Ask)\\b"
+				},
+				{
+					"name": "constants.digits.cherri",
+					"match": "\\b[0-9]+\\b"
+				}
+			]
 		},
 		"actions": {
 			"name": "storage.type.cherri",
