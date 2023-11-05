@@ -38,7 +38,7 @@
 		"keywords": {
 			"patterns": [{
 				"name": "keyword.control.cherri",
-				"match": "\\b(if|else|repeat|for|color|name|glyph|menu|item|list|nil|const|action|in|stop)\\b"
+				"match": "\\b(if|else|repeat|for|color|name|glyph|menu|item|list|nil|const|action|in|stop|makeVCard|rawAction)\\b"
 			}]
 		},
 		"pragmas": {
