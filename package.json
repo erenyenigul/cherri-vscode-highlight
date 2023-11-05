@@ -19,7 +19,11 @@
       "id": "cherri",
       "aliases": ["Cherri", "cherri"],
       "extensions": [".cherri"],
-      "configuration": "./language-configuration.json"
+      "configuration": "./language-configuration.json",
+      "icon": {
+         "light": "./cherri_icon.png",
+         "dark": "./cherri_icon.png"
+       }
     }],
     "grammars": [{
       "language": "cherri",
